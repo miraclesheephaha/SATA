@@ -5,6 +5,7 @@
 <img width="478" height="190" alt="image" src="https://github.com/user-attachments/assets/c908ff35-6d75-4701-b253-c65e359915f0" />
 
 * RAID3與RAID4與RAID5差別
+  
   <img width="391" height="164" alt="image" src="https://github.com/user-attachments/assets/7d187b9c-b9a9-4e7d-9619-14f8e2cedefe" />
 
 1. *RAID 3：位元級同步 (Bit-level)*  
