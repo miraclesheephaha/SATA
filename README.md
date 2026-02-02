@@ -1,5 +1,19 @@
 # SATA Introduction  
 ## RAID MODE
-* RAID3:資料拆分：當你寫入一筆資料時，它會被拆成「位元 (Bit)」或「位元組 (Byte)」，分散存放在多顆資料碟中。專用校驗碟 (Dedicated Parity Drive)：系統會計算這些資料的 XOR (互斥或) 結果，並將結果存放在最後一顆「校驗專用碟」。
+* RAID3:資料拆分：當你寫入一筆資料時，它會被拆成「位元 (Bit)」或「位元組 (Byte)」，分散存放在多顆資料碟中。專用校驗碟 (Dedicated Parity Drive)：系統會計算這些資料的 XOR (互斥或) 結果，並將結果存放在最後一顆「校驗專用碟」。(XOR是兩個一樣地為0)
+
+<img width="957" height="381" alt="image" src="https://github.com/user-attachments/assets/c908ff35-6d75-4701-b253-c65e359915f0" />
+
+* RAID3與RAID4與RAID5差別
+  <img width="783" height="328" alt="image" src="https://github.com/user-attachments/assets/7d187b9c-b9a9-4e7d-9619-14f8e2cedefe" />
+
+1. RAID 3：位元級同步 (Bit-level)  
+  RAID 3 是「軍隊式」管理。資料被切成極小的碎片分散在所有資料碟。  
+  運作方式：讀取一個 4KB 檔案時，控制器要求所有硬碟同步動作，每顆硬碟貢獻幾位元。  
+  優點：大檔案連續讀取極快。  
+  缺點：無法處理併發（多個小任務），且校驗碟負荷極重。  
+  現況：已幾乎絕跡，被 RAID 5 取代。  
+
+  
 
 
