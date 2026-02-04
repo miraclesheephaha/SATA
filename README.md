@@ -29,6 +29,9 @@ RAID 4 改進了分割方式，將資料切成 Block (如 4KB)。
 4. RAID 6 的技術奧秘：雙重校驗 (P + Q)
    RAID 5 只使用一種簡單的 XOR ($P$) 計算。而 RAID 6 則引入了第二組完全不同的校驗演算法（通常是基於 Galois Field 伽羅瓦域的編碼，稱為 $Q$ 校驗）。  
    P 校驗：簡單的 XOR 運算，能找出一顆硬碟掉失的資料。  
-   Q 校驗：複雜的線性代數運算。即使兩顆硬碟同時消失，透過 P 和 Q 聯立方程式，控制器依然能解出原始資料。  
+   Q 校驗：複雜的線性代數運算。即使兩顆硬碟同時消失，透過 P 和 Q 聯立方程式，控制器依然能解出原始資料。
+
+## 其他問題  
+<img width="290" height="153" alt="image" src="https://github.com/user-attachments/assets/4bdd8200-4749-4c20-ac0b-17df8e8d6a96" />
 
 
