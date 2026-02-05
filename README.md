@@ -34,6 +34,13 @@ RAID 4 改進了分割方式，將資料切成 Block (如 4KB)。
 ## 其他問題  
 <img width="290" height="153" alt="image" src="https://github.com/user-attachments/assets/4bdd8200-4749-4c20-ac0b-17df8e8d6a96" />  
 
-PCIe 路徑：CPU $\rightarrow$ PCIe Root Port $\rightarrow$ 設備 (如 NVMe 控制器)(PCIe 是傳輸資料的通道)SATA 路徑：CPU $\rightarrow$ PCIe (總線) $\rightarrow$ PCH 內部的 AHCI HBA $\rightarrow$ SATA 接口(SATA 是接在 PCIe 總線底下的一個「子系統」)  
+PCIe與SATA的差異?  
+PCIe 路徑：CPU $\rightarrow$ PCIe Root Port $\rightarrow$ 設備 (如 NVMe 控制器)(PCIe 是傳輸資料的通道)  
+SATA 路徑：CPU $\rightarrow$ PCIe (總線) $\rightarrow$ PCH 內部的 AHCI HBA $\rightarrow$ SATA 接口(SATA 是接在 PCIe 總線底下的一個「子系統」)  
+
+PCIe 是更底層、更通用的傳輸層級。  
+SATA 是建立在儲存需求上的應用介面層級。  
+在現代架構中，SATA 控制器本身就是一個 PCIe 設備。  
+
 
 
