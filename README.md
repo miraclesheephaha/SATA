@@ -32,6 +32,8 @@ RAID 4 改進了分割方式，將資料切成 Block (如 4KB)。
    Q 校驗：複雜的線性代數運算。即使兩顆硬碟同時消失，透過 P 和 Q 聯立方程式，控制器依然能解出原始資料。
 
 ## 其他問題  
-<img width="290" height="153" alt="image" src="https://github.com/user-attachments/assets/4bdd8200-4749-4c20-ac0b-17df8e8d6a96" />
+<img width="290" height="153" alt="image" src="https://github.com/user-attachments/assets/4bdd8200-4749-4c20-ac0b-17df8e8d6a96" />  
+
+PCIe 路徑：CPU $\rightarrow$ PCIe Root Port $\rightarrow$ 設備 (如 NVMe 控制器)(PCIe 是傳輸資料的通道)SATA 路徑：CPU $\rightarrow$ PCIe (總線) $\rightarrow$ PCH 內部的 AHCI HBA $\rightarrow$ SATA 接口(SATA 是接在 PCIe 總線底下的一個「子系統」)  
 
 
